@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Convertion</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-info">
+	<center>
+	<br>
+	<center><h2>Magical Time Converter aka MTC</h2>	</center>
+	<br>
+	<table> 
+		<tr>
+		<center><th class="bg-danger">Seconds</th></center>
+		<p><input type="text" id="Seconds MTC Version BETA"></p>
+		<input type="button" class="btn btn-success"name="CONVERT" onclick="SecMin()" value="To Minutes">
+		<input type="button" class="btn btn-success"name="CONVERT" onclick="SecHr()" value="To Hours">
+		<input type="button" class="btn btn-success"name="CONVERT" onclick="SecDt()" value="To Day">
+		</tr>
+	</table> </center>
+</body>
+<script>
+	function SecMin(){
+		var x, y
+		x=(document.getElementById('Seconds MTC Version BETA').value);
+		y= 60;
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x=(document.getElementById('Seconds MTC Version BETA').value);
+		y= 3600;
+		alert(x / y);
+	}
+	function SecDt(){
+		var x, y
+		x=(document.getElementById('Seconds MTC Version BETA').value);
+		y= 86400;
+		alert(x / y);
+	}
+</script>
+</html>
